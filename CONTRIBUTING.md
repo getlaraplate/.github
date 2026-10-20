@@ -33,7 +33,7 @@ Work done for a specific customer under a separate agreement, such as custom mod
 modifications, is not part of these projects and is not covered by this commitment. What belongs in
 the public projects is never kept out of them by being delivered to a customer instead.
 
-`laraplate-edge` is the open, generic connector for machine data. The Laraplate UI applications, the
+`laraedge` is the open, generic connector for machine data. The Laraplate UI applications, the
 vendor-specific machine connectors (plugins built on the Apache-2.0 plugin SDK of the edge agent) and
 the data importers are separate proprietary products, built and distributed from their own
 repositories. They are not part of the AGPL projects listed above: the UI talks to the backend over
