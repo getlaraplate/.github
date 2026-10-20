@@ -1,0 +1,54 @@
+name: CLA (reusable)
+
+# Reusable workflow called by every public repository of the organization. One signature, stored in
+# getlaraplate/cla-signatures, is valid for all of them.
+#
+# Dormant until the Contributor License Agreement is published as CLA.md in this repository: while
+# the file does not exist, the workflow does nothing, so no contributor is asked to sign a text that
+# is not public yet.
+
+on:
+  workflow_call:
+    secrets:
+      CLA_SIGNATURES_TOKEN:
+        required: false
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+  statuses: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      published: ${{ steps.document.outputs.published }}
+    steps:
+      - id: document
+        run: |
+          code=$(curl -s -o /dev/null -w '%{http_code}' https://raw.githubusercontent.com/getlaraplate/.github/main/CLA.md)
+          if [ "$code" = "200" ]; then echo "published=true" >> "$GITHUB_OUTPUT"; else echo "published=false" >> "$GITHUB_OUTPUT"; fi
+
+  cla:
+    needs: check
+    if: >-
+      needs.check.outputs.published == 'true' &&
+      ((github.event.comment.body == 'recheck' ||
+        github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') ||
+       github.event_name == 'pull_request_target')
+    runs-on: ubuntu-latest
+    steps:
+      - name: CLA Assistant
+        uses: contributor-assistant/github-action@ca4a40a7d1004f18d9960b404b97e5f30a505a08 # v2.6.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.CLA_SIGNATURES_TOKEN }}
+        with:
+          path-to-document: https://github.com/getlaraplate/.github/blob/main/CLA.md
+          path-to-signatures: signatures/v1/cla.json
+          branch: main
+          remote-organization-name: getlaraplate
+          remote-repository-name: cla-signatures
+          allowlist: swolley,dependabot[bot]
+          lock-pullrequest-aftermerge: false
