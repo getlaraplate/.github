@@ -36,7 +36,9 @@ different terms. We commit that:
   Contributor License Agreement, which we are finalising, and bind anyone who takes over the project.
 
 Custom work done for a specific customer under a separate agreement is not part of the open source
-projects and is outside this commitment.
+projects and is outside this commitment. So are the proprietary products built on top of them (UI
+applications, vendor-specific machine connectors built as edge plugins, importers), which live in their own repositories and use only the
+public interfaces of the AGPL projects.
 
 Read more in the [contributing guide](https://github.com/getlaraplate/.github/blob/main/CONTRIBUTING.md).
 
