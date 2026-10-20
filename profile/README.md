@@ -12,15 +12,15 @@ Created and maintained by [@swolley](https://github.com/swolley).
 | Repository | What it is | License |
 |---|---|---|
 | [laraplate](https://github.com/getlaraplate/laraplate) | The application: Laravel backend and Filament backoffice | AGPL-3.0 |
-| [laraplate-core](https://github.com/getlaraplate/laraplate-core) | Users, ACL, settings, CRUD API, search, versioning and shared services | AGPL-3.0 |
-| [laraplate-cms](https://github.com/getlaraplate/laraplate-cms) | Contents, categories, tags, moderated comments, multilingual publishing | AGPL-3.0 |
-| [laraplate-ai](https://github.com/getlaraplate/laraplate-ai) | Embeddings, vector search, automatic translation, in-app assistant | AGPL-3.0 |
-| [laraplate-crm](https://github.com/getlaraplate/laraplate-crm) | Counterparties, contacts, leads and opportunities | AGPL-3.0 |
-| [laraplate-erp](https://github.com/getlaraplate/laraplate-erp) | Accounting, sales, purchases, invoicing, inventory, projects | AGPL-3.0 |
-| [laraplate-mes](https://github.com/getlaraplate/laraplate-mes) | Work orders, routings, shop-floor events, traceability, quality | AGPL-3.0 |
-| [laraplate-sao](https://github.com/getlaraplate/laraplate-sao) | Ticketing that correlates code, errors and work | AGPL-3.0 |
-| [laraplate-shop](https://github.com/getlaraplate/laraplate-shop) | Online sales channel on CMS content and ERP items | AGPL-3.0 |
-| [laraplate-edge](https://github.com/getlaraplate/laraplate-edge) | Go edge agent for machine data | AGPL-3.0 |
+| [laracore](https://github.com/getlaraplate/laracore) | Users, ACL, settings, CRUD API, search, versioning and shared services | AGPL-3.0 |
+| [laracms](https://github.com/getlaraplate/laracms) | Contents, categories, tags, moderated comments, multilingual publishing | AGPL-3.0 |
+| [laraai](https://github.com/getlaraplate/laraai) | Embeddings, vector search, automatic translation, in-app assistant | AGPL-3.0 |
+| [laracrm](https://github.com/getlaraplate/laracrm) | Counterparties, contacts, leads and opportunities | AGPL-3.0 |
+| [laraerp](https://github.com/getlaraplate/laraerp) | Accounting, sales, purchases, invoicing, inventory, projects | AGPL-3.0 |
+| [larames](https://github.com/getlaraplate/larames) | Work orders, routings, shop-floor events, traceability, quality | AGPL-3.0 |
+| [larasao](https://github.com/getlaraplate/larasao) | Ticketing that correlates code, errors and work | AGPL-3.0 |
+| [larashop](https://github.com/getlaraplate/larashop) | Online sales channel on CMS content and ERP items | AGPL-3.0 |
+| [laraedge](https://github.com/getlaraplate/laraedge) | Go edge agent for machine data | AGPL-3.0 |
 | [whisper-api](https://github.com/getlaraplate/whisper-api), [sentence-transformers-api](https://github.com/getlaraplate/sentence-transformers-api) | Self-hosted AI services used by the AI module | Apache-2.0 |
 
 ## Our licensing commitment

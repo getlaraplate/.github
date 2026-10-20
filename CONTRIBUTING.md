@@ -6,8 +6,8 @@ Laraplate ecosystem:
 | Repository | What it is | License |
 |---|---|---|
 | [laraplate](https://github.com/getlaraplate/laraplate) | Laravel backend and Filament admin | AGPL-3.0 |
-| laraplate-core, -cms, -ai, -erp, -mes, -sao, -shop, -crm | Backend modules (`Modules/*` of `laraplate`) | AGPL-3.0 |
-| [laraplate-edge](https://github.com/getlaraplate/laraplate-edge) | Go edge agent for machine data | AGPL-3.0 |
+| laracore, laracms, laraai, laraerp, larames, larasao, larashop, laracrm | Backend modules (`Modules/*` of `laraplate`) | AGPL-3.0 |
+| [laraedge](https://github.com/getlaraplate/laraedge) | Go edge agent for machine data | AGPL-3.0 |
 | [whisper-api](https://github.com/getlaraplate/whisper-api), [sentence-transformers-api](https://github.com/getlaraplate/sentence-transformers-api) | Python inference services | Apache-2.0 |
 
 Please also read our [Code of Conduct](CODE_OF_CONDUCT.md). To report a security issue, do not
@@ -127,14 +127,14 @@ checks. CI runs the test suite on every pull request.
 Shipped behaviour must be documented in the module's `docs/` folder, and new or changed
 environment variables in the module `README.md`.
 
-### Edge agent (`laraplate-edge`)
+### Edge agent (`laraedge`)
 
 ```bash
 go vet ./...
 go test -race ./...
 ```
 
-`laraplate-edge` talks to Laraplate only through its published protocol and configuration
+`laraedge` talks to Laraplate only through its published protocol and configuration
 routes. Proprietary drivers and profiles are not accepted into this repository: build them as
 plugins on the Apache-2.0 plugin SDK instead.
 
