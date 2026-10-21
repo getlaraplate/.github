@@ -1,0 +1,76 @@
+name: Bug report
+description: Something does not work as documented
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Laraplate is a work in progress. Please search the open issues first.
+        Security problems do not belong here: read the [security policy](https://github.com/getlaraplate/.github/blob/main/SECURITY.md).
+  - type: dropdown
+    id: component
+    attributes:
+      label: Where did it happen?
+      options:
+        - Application (laraplate)
+        - Core
+        - CMS
+        - AI
+        - ERP
+        - MES
+        - SAO
+        - Shop
+        - CRM
+        - Edge agent
+        - whisper-api
+        - sentence-transformers-api
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v1.2.3 or a commit hash
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: PHP, Laravel and database versions, or Go and Python versions, and the operating system.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The shortest sequence that shows the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or stack trace
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before sending
+      options:
+        - label: I searched the existing issues.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true
