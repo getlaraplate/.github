@@ -1,0 +1,55 @@
+name: Feature request
+description: Propose an improvement or a new capability
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Laraplate has an opinionated architecture: describing the problem first helps us agree on the design
+        before any code is written. Please search the open issues first.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part?
+      options:
+        - Application (laraplate)
+        - Core
+        - CMS
+        - AI
+        - ERP
+        - MES
+        - SAO
+        - Shop
+        - CRM
+        - Edge agent
+        - whisper-api
+        - sentence-transformers-api
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What can you not do today, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you contribute it?
+      description: External code contributions are accepted once the contributor agreement is published.
+      options:
+        - "Yes"
+        - "Maybe, with guidance"
+        - "No"
