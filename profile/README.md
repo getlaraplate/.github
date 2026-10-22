@@ -1,6 +1,6 @@
 # Laraplate
 
-A modular Laravel platform: CMS, CRM, ERP, MES, Shop and AI modules on a shared core, with a
+A modular Laravel platform: CMS, CRM, ERP, MES, Shop, Tickets and AI modules on a shared core, with a
 Filament backoffice. Install only the modules you need.
 
 > ⚠️ **Caution**: These projects are a **work in progress**. **Don't use them in production or use them at your own risk**—no guarantees are provided... or better yet, collaborate with me to create the definitive Laravel boilerplate; that's the right place to introduce your ideas. Let me know your ideas...
