@@ -18,10 +18,10 @@ Created and maintained by [@swolley](https://github.com/swolley).
 | <img src="https://raw.githubusercontent.com/getlaraplate/brand/main/logos/blueprint/crm.svg" width="32" alt="LaraCRM"> | [laracrm](https://github.com/getlaraplate/laracrm) | Counterparties, contacts, leads and opportunities | AGPL-3.0 |
 | <img src="https://raw.githubusercontent.com/getlaraplate/brand/main/logos/blueprint/erp.svg" width="32" alt="LaraERP"> | [laraerp](https://github.com/getlaraplate/laraerp) | Accounting, sales, purchases, invoicing, inventory, projects | AGPL-3.0 |
 | <img src="https://raw.githubusercontent.com/getlaraplate/brand/main/logos/blueprint/mes.svg" width="32" alt="LaraMES"> | [larames](https://github.com/getlaraplate/larames) | Work orders, routings, shop-floor events, traceability, quality | AGPL-3.0 |
+|  | ↳ [laraedge](https://github.com/getlaraplate/laraedge) | MES edge agent: collects machine data and sends it to LaraMES | AGPL-3.0 |
+|  | ↳ [laraedge-sdk](https://github.com/getlaraplate/laraedge-sdk) | Plugin SDK for the MES edge agent: protocol, Go SDK, conformance suite | Apache-2.0 |
 | <img src="https://raw.githubusercontent.com/getlaraplate/brand/main/logos/blueprint/sao.svg" width="32" alt="LaraSAO"> | [larasao](https://github.com/getlaraplate/larasao) | Ticketing that correlates code, errors and work | AGPL-3.0 |
 | <img src="https://raw.githubusercontent.com/getlaraplate/brand/main/logos/blueprint/shop.svg" width="32" alt="LaraShop"> | [larashop](https://github.com/getlaraplate/larashop) | Online sales channel on CMS content and ERP items | AGPL-3.0 |
-| <img src="https://raw.githubusercontent.com/getlaraplate/brand/main/logos/blueprint/edge.svg" width="32" alt="LaraEdge"> | [laraedge](https://github.com/getlaraplate/laraedge) | Go edge agent for machine data | AGPL-3.0 |
-| <img src="https://raw.githubusercontent.com/getlaraplate/brand/main/logos/blueprint/edge.svg" width="32" alt="LaraEdge SDK"> | [laraedge-sdk](https://github.com/getlaraplate/laraedge-sdk) | Plugin SDK for the edge agent: protocol, Go SDK, conformance suite | Apache-2.0 |
 |  | [whisper-api](https://github.com/getlaraplate/whisper-api), [sentence-transformers-api](https://github.com/getlaraplate/sentence-transformers-api) | Self-hosted AI services used by the AI module | Apache-2.0 |
 
 ## Our licensing commitment
