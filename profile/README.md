@@ -22,7 +22,6 @@ Created and maintained by [@swolley](https://github.com/swolley).
 |  | ↳ [laraedge-sdk](https://github.com/getlaraplate/laraedge-sdk) | Plugin SDK for the MES edge agent: protocol, Go SDK, conformance suite | Apache-2.0 |
 | <img src="https://raw.githubusercontent.com/getlaraplate/brand/main/logos/blueprint/sao.svg" width="32" alt="LaraSAO"> | [larasao](https://github.com/getlaraplate/larasao) | Ticketing that correlates code, errors and work | AGPL-3.0 |
 | <img src="https://raw.githubusercontent.com/getlaraplate/brand/main/logos/blueprint/shop.svg" width="32" alt="LaraShop"> | [larashop](https://github.com/getlaraplate/larashop) | Online sales channel on CMS content and ERP items | AGPL-3.0 |
-|  | [whisper-api](https://github.com/getlaraplate/whisper-api), [sentence-transformers-api](https://github.com/getlaraplate/sentence-transformers-api) | Self-hosted AI services used by the AI module | Apache-2.0 |
 
 ## Our licensing commitment
 
